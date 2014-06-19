@@ -1,0 +1,272 @@
+/* Importing Custom Fonts */
+
+@font-face {
+	font-family: 'HelveticaNeueCE-Thin';
+	src: url('fonts/HelveticaNeueCE-Thin/HelveticaNeueCE-Thin.eot?') format('eot'), 
+	url('fonts/HelveticaNeueCE-Thin/HelveticaNeueCE-Thin.woff') format('woff'), 
+	url('fonts/HelveticaNeueCE-Thin/HelveticaNeueCE-Thin.ttf')  format('truetype'),
+	url('fonts/HelveticaNeueCE-Thin/HelveticaNeueCE-Thin.svg#HelveticaNeueCE-Thin') format('svg');
+}
+
+@font-face {
+	font-family: 'HelveticaNeueLTCom-Lt';
+	src: url('fonts/HelveticaNeueLTCom-Lt/HelveticaNeueLTCom-Lt.eot?') format('eot'), 
+	url('fonts/HelveticaNeueLTCom-Lt/HelveticaNeueLTCom-Lt.woff') format('woff'), 
+	url('fonts/HelveticaNeueLTCom-Lt/HelveticaNeueLTCom-Lt.ttf')  format('truetype'),
+	url('fonts/HelveticaNeueLTCom-Lt/HelveticaNeueLTCom-Lt.svg#HelveticaNeueLTCom-Lt') format('svg');
+}
+
+@font-face {
+	font-family: "Helvetica-75-Bold";
+	src: url('fonts/Helvetica_CE_55_Roman/626281739-Helvetica-Neue-CE-75-Bold.eot');
+	src: url('fonts/Helvetica_CE_55_Roman/626281739-Helvetica-Neue-CE-75-Bold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Helvetica_CE_55_Roman/626281739-Helvetica-Neue-CE-75-Bold.svg#Helvetica CE 55 Roman') format('svg'),
+	url('fonts/Helvetica_CE_55_Roman/626281739-Helvetica-Neue-CE-75-Bold.woff') format('woff'),
+	url('fonts/Helvetica_CE_55_Roman/626281739-Helvetica-Neue-CE-75-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueLT-W1G-55-Roman";
+	src: url('fonts/HelveticaNeueLT_W1G_55_Roman/797332764-HelveticaNeue-Roman.eot');
+	src: url('fonts/HelveticaNeueLT_W1G_55_Roman/797332764-HelveticaNeue-Roman.eot?#iefix') format('embedded-opentype'),
+	url('fonts/HelveticaNeueLT_W1G_55_Roman/797332764-HelveticaNeue-Roman.svg#HelveticaNeueLT W1G 55 Roman') format('svg'),
+	url('fonts/HelveticaNeueLT_W1G_55_Roman/797332764-HelveticaNeue-Roman.woff') format('woff'),
+	url('fonts/HelveticaNeueLT_W1G_55_Roman/797332764-HelveticaNeue-Roman.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Font Colors */
+.fc-darkblue {
+	color : #005892 !important;
+}
+
+.fc-medblue {
+	color: #0073AE !important;
+}
+
+.fc-litblue {
+	color: #7EB9E5 !important;
+}
+
+.fc-darkgray {
+	color : #4F6567 !important;
+}
+
+.fc-medgray {
+	color: #A6A6A6 !important;
+}
+
+.fc-litgray {
+	color: #D7D7D7 !important;
+}
+
+.fc-white {
+	color: #FFFFFF !important;
+}
+
+
+/* Back Ground Colors */
+.bg-darkblue {
+	background-color : #0977B0 !important;
+}
+
+.bg-medblue {
+	background-color: #7EB9E5 !important;
+}
+
+.bg-litblue {
+	background-color: #9ACFF7 !important;
+}
+
+.bg-medgray {
+	background-color: #A2A9AA !important;
+}
+
+.bg-litgray {
+	background-color: #CCCCCC !important;
+}
+
+.bg-white {
+	background-color:rgba(255,255,255,0.9);
+}
+
+/* Fonts */
+
+.helv-thin {
+	font-family : 'HelveticaNeueCE-Thin',Helvetica !important;
+}
+
+.helv-bold {
+	font-family : 'Helvetica-75-Bold',Helvetica !important;
+}
+
+.helv-light {
+	font-family : 'HelveticaNeueLTCom-Lt',Helvetica !important;
+}
+
+.helv-regular {
+	font-family : 'HelveticaNeueLT-W1G-55-Roman',Helvetica !important;
+}
+
+/* --------------------------- */
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 8px #005892; 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 8px #005892; 
+}
+
+body {
+	background: url(../images/bcg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.container {
+	max-width:98%;
+}
+
+
+.custompanel {
+	height:700px;
+}
+
+.inner-panel {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left:5px;
+	height: 100%;
+	border: 1px solid rgba(86,61,124,.2);
+	border-radius: 10px;
+	overflow:hidden;
+}
+
+.nopadding {
+	padding-left : 0px !important;
+	padding-top : 0px !important;
+	border : none !important;
+}
+
+.filters {
+	padding-bottom:10px;
+	min-height:15%;
+	border-bottom: 1px solid #A2A9AA;
+}
+
+.search {
+	/* border: 1px solid #0172AA; */
+	border-radius: 80px;
+	width:95%;
+	height:40px;
+	margin: 0 auto;
+	background-color:rgba(126,185,229,0.2);
+}
+
+.search-input {
+	width:100%;
+	background: url(../images/search_icn.png),url(../images/cancel_icn.png) ;
+	background-position:2%,98%; 
+	background-size: 25px 20px,25px 25px;
+	background-repeat:no-repeat; 
+	padding-left:40px;
+	padding-right:40px;
+}
+
+input
+{
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+    border:solid 1px black;
+    padding:5px;
+    border:none;
+	height:100%;
+	
+	font-size:25px;
+}
+
+.scroll-data {
+	overflow-y:scroll;
+	width:100%;
+}
+
+.rel-data {
+	padding:0px;
+}
+
+.scroll-data-mini {
+	overflow-y:scroll;
+	width:100%;
+}
+
+.rounddiv {
+	border-radius:50px;
+	padding-top:3px;
+	padding-bottom:3px;
+	font-size:20;
+	padding-left:10px;
+	padding-right:10px;
+	display:inline;
+	white-space: nowrap
+}
+
+.Table
+ {
+	display: table;
+	width:100%;
+}
+.Title
+{
+	display: table-caption;
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+}
+.Heading
+{
+	display: table-row;
+	font-weight: bold;
+}
+.Row
+{
+	display: table-row;
+	height:50px;
+}
+.Cell
+{
+	display: table-cell;
+	border-bottom: 1px solid #CCCCCC;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	vertical-align:middle;
+}
+
+.col1 {
+color :#0073ae;
+font-size:18px;
+font-family: 'HelveticaNeueLTCom-Lt',Helvetica !important;
+}
+
+.col4 {
+color :#7EB9E5;
+text-align:center;
+font-size:11px;
+}
+.col2,.col3 {
+color:#4f6567;
+font-size:11px;
+text-align:right;
+}

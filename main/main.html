@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="styles/kendo.common.min.css" rel="stylesheet" />
+	<link href="styles/kendo.default.min.css" rel="stylesheet" />
+	<link href="styles/kendo.dataviz.min.css" rel="stylesheet" />
+	<link href="styles/kendo.dataviz.default.min.css" rel="stylesheet" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/kendo.all.min.js"></script>
+	<title>CMLT</title>
+	<link href="40_bootstrap_1024_1366_2048/css/bootstrap.css" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<br><br>
+        <div class="col-sm-4"><img src="images/logo.png" style="width:60px;height:60px"></div>
+        <div class="col-sm-4" style="text-align:center;">
+			<img src="images/client_icn.png">
+			<h3 style="display:inline;white-space:nowrap;">
+			<span class="helv-thin fc-darkgray" style="font-size:35px !important;"> Betty Jane Bacack</span>
+			</h3>
+		</div>
+        <!-- <div class="col-sm-4" style="text-align:right;"></div> -->
+	  <br><br><br><br><br>
+
+        <div class="col-sm-6 custompanel">
+          <div class="inner-panel bg-white">
+            <div class="filters">
+				<span class="fc-medblue helv-bold" style="font-size:32;font-weight:bold;">Filter by:</span> 
+				<div class="rounddiv helv-bold bg-medblue fc-white">PROGRAM</div>  
+				<div class="rounddiv helv-bold bg-medblue fc-white"><span id="tag">CASE MANAGER</div> 
+				<div class="rounddiv helv-bold bg-medblue fc-white"><span id="tag">FROM: 1/5/2012</div> 
+				<div class="rounddiv helv-bold bg-medblue fc-white"><span id="tag">TO: 1/5/2012</div> <br><br>
+				<div class="search">
+					<input type="text" class="search-input">
+				</div> 
+            </div>
+            <div class="scroll-data">
+				<div class="Table">
+					<div class="Heading">
+						<div class="Cell fc-darkblue helv-light" style="font-size:18px;">Clients</div>
+						<div class="Cell fc-darkblue helv-light" style="font-size:18px;"></div>
+						<div class="Cell fc-litblue helv-light" style="font-size:11px;text-align:right;">Show Inactive</div>
+						<div class="Cell fc-litblue helv-light" style="font-size:11px;text-align:center;">+ New Client</div>
+					</div>
+						<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4 invalid">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1 invalid">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4 invalid">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1 invalid">Lastname, Firstname</div>
+						<div class="Cell col2 invalid"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3 invalid"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+					<div class="Row">
+						<div class="Cell col1">Lastname, Firstname</div>
+						<div class="Cell col2"><strong>ID#</strong> XXXX</div>
+						<div class="Cell col3"><strong>UPDATED</strong> XX/XX/XXXX</div>
+						<div class="Cell col4">IEP</div>
+					</div>
+  
+
+            </div>
+			</div>
+          </div>
+        </div>
+        <div class="col-sm-6 custompanel">
+		<div class="inner-panel nopadding bg-white">
+            
+			<div id="example" style="min-height:75%;margin-left:-1px !important;">
+            <div class="demo-section">
+                <div id="special-days" style="padding-right:0px;">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    var today = new Date(),
+                        events = [
+                           +new Date(today.getFullYear(), today.getMonth(), 8),
+                           +new Date(today.getFullYear(), today.getMonth(), 12),
+                           +new Date(today.getFullYear(), today.getMonth(), 24),
+                           +new Date(today.getFullYear(), today.getMonth() + 1, 6),
+                           +new Date(today.getFullYear(), today.getMonth() + 1, 7),
+                           +new Date(today.getFullYear(), today.getMonth() + 1, 25),
+                           +new Date(today.getFullYear(), today.getMonth() + 1, 27),
+                           +new Date(today.getFullYear(), today.getMonth() - 1, 3),
+                           +new Date(today.getFullYear(), today.getMonth() - 1, 5),
+                           +new Date(today.getFullYear(), today.getMonth() - 2, 22),
+                           +new Date(today.getFullYear(), today.getMonth() - 2, 27)
+                        ];
+
+                    $("#calendar").kendoCalendar({
+                        value: today,
+                        dates: events,
+                        month: {
+                            // template for dates in month view
+                            content: '# if ($.inArray(+data.date, data.dates) != -1) { #' +
+                                        '<div class="' +
+                                           '# if (data.value < 10) { #' +
+                                               "exhibition" +
+                                           '# } else if ( data.value < 20 ) { #' +
+                                               "party" +
+                                           '# } else { #' +
+                                               "cocktail" +
+                                           '# } #' +
+                                        '">#= data.value #</div><div class="superscript" style="position: relative; top: -45px; right:-2em; font-size: 80%;">2</div>' +
+                                     '# } else {#' +
+                                        '<div class="' +
+                                           '# if (1) { #' +
+                                               "gensel" +
+                                           '# } #' +
+                                        '">#= data.value #</div><div class="" style="position: relative; top: -45px; right:-2em; font-size: 80%;"></div>' +
+                                     '# } #'
+                        },
+                        footer: false
+                    });
+                });
+            </script>
+
+            <style scoped>
+                .demo-section {
+
+                }
+                #special-days {
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    background: url('c1alendar-template.jpg') transparent no-repeat 0 bottom;
+                }
+				
+                #calendar {
+                    margin-top:-1px;
+                    width: 100%;
+                    text-align: center;
+                }
+                #calendar .k-content {
+                    height: 300px;
+                }
+				
+
+                #calendar,
+                
+                
+                #calendar th,
+                #calendar .k-link,
+                #calendar .k-state-hover,
+                #calendar .k-state-selected,
+                #calendar .k-state-focused {
+                    background: transparent;
+                    border-color: transparent;
+                    color: #6F6F6F;
+                    font-size:16px;
+                    box-shadow: none;
+                }
+				#calendar .k-content {
+                    background-color: transparent;
+                    border-color: transparent;
+                    color: #6F6F6F;
+                    font-size:16px;
+                    box-shadow: none;				
+				
+				}
+                #calendar .k-state-selected .gensel {
+                         width: 40px;
+                        height: 40px;
+                        margin: auto;
+                        -webkit-border-radius: 100px;
+                        -moz-border-radius: 100px;
+                        border-radius: 50%;
+                        line-height: 40px;
+						color:white;
+                        background-color: rgba(1, 114, 170, 0.48);
+                }
+				
+				#calendar .k-state-selected a .cocktail,#calendar .k-state-selected a .party,#calendar .k-state-selected a .exhibition {
+                        width: 40px;
+                        height: 40px;
+                        -webkit-border-radius: 100px;
+                        -moz-border-radius: 100px;
+                        border-radius: 50%;
+                        line-height: 40px;
+                        
+						margin-top:25px;
+						margin-bottom:auto;
+						margin-left:auto;
+						margin-right:auto;
+						background-color: rgba(1, 114, 170, 0.48);
+						
+                }
+                #calendar .k-header {
+                  background: #0172AA;
+                  border-color: transparent;
+                  color: #FFFFFF;
+                  font-size:16px;
+                  box-shadow: none;
+				  border-radius:10px;
+				  border-bottom-right-radius:0px;
+				  border-bottom-left-radius:0px;
+                }
+                .k-calendar .k-link.k-nav-fast {
+                  color: #FFFFFF !important;
+				  font-size:30px !important;
+                }
+                #calendar .k-content .k-state-hover,
+                #calendar .k-content .k-state-focused {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                #calendar .k-state-selected, #calendar .k-state-selected.k-state-focused {
+                    font-size: 24px;
+                    font-weight: bold;
+					color:white;
+                }
+                #calendar .k-content .k-link {
+                    padding: 0;
+                    min-height: 40px;
+                    line-height: 40px;
+                }
+                #calendar th {
+                    color: white;
+					font-size: 20px;
+                }
+				
+				
+				#calendar thead {
+                    background-color: #0172AA;
+                }
+                #calendar td.k-other-month .k-link {
+                    color: #8cbabf;
+                }
+                #calendar th,
+                #calendar td {
+                    text-align: center;
+                }
+				#calendar .k-nav-prev {
+					margin-top:1%;
+					background-image: url('images/arrow-Left.png');
+				}
+				#calendar .k-nav-next {
+					margin-top:1%;
+					right : 4% !important;
+					background-image: url('images/arrow-Right.png');
+				}				
+                /* Template Days */
+                .exhibition, .party, .cocktail {
+                        width: 40px;
+                        height: 40px;
+                        -webkit-border-radius: 100px;
+                        -moz-border-radius: 100px;
+                        border-radius: 50%;
+                        border-color:rgba(1, 114, 170, 0.48);
+                        line-height: 40px;
+                        border: 3px solid rgba(1, 114, 170, 0.48);
+						margin-top:25px;
+						margin-bottom:auto;
+						margin-left:auto;
+						margin-right:auto;
+						
+                }
+                .superscript {
+                        width: 18px;
+                        height: 18px;
+                        margin: auto;
+						color:white;
+						font-weight:bold;
+                        -webkit-border-radius: 50px;
+                        -moz-border-radius: 50px;
+                        border-radius: 50%;
+						background-color:#9ACFF7;
+                        line-height: 20px;
+                        border: 2px solid #9ACFF7;
+                }                
+                /*.exhibition {
+                    background-color: #fff;
+                    color: #000;
+                }
+                .party {
+                    background-color: #70c114;
+                }
+                .cocktail {
+                    background-color: #00a1e8;
+                }*/
+            </style>
+			</div>
+			<div class="rel-data">
+				<div class="col-sm-6 helv-bold fc-darkgray" >New Incoming Referrals - <span class="fc-darkblue">8</span></div>
+				<div class="col-sm-5 fc-litblue helv-regular pull-right" style="text-align:right;">+New Appointment</div>
+				<div class="col-sm-12" style="border-bottom:1px solid #CCCCCC !important;padding-top:5px !important;padding-bottom:5px !important;"></div>
+				 
+				<div class="col-sm-6 fc-darkblue helv-light" style="font-size:20px;font-weight:bold" >Friday, January 10</div>
+				<div class="col-sm-6 pull-right fc-darkblue helv-thin" style="padding-top:1%"><div style="float: right;">6 Appointments</div></div>
+				<div class="col-sm-12" style="border-bottom:2px solid #0977B0 !important;padding-bottom:5px !important;"></div>
+			</div>
+			<div class="scroll-data-mini">
+				<div class="Table">
+					<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">12:00</div>
+						<div class="Cell fc-darkgray helv-light" >Hernandez, Michael P.</div>
+					</div>
+					<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">13:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+					<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">14:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+					<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">15:00</div>
+						<div class="Cell fc-darkgray helv-light">Don Draper</div>
+					</div>
+					<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">16:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+										<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">17:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+										<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">18:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+										<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">19:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+										<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">20:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+										<div class="Row">
+						<div class="Cell helv-bold fc-medgray" style="width:15% !important;font-size:11px">21:00</div>
+						<div class="Cell rol2"></div>
+					</div>
+				</div>
+			</div>
+        </div>
+        </div>
+		
+		
+      </div>
+<script>
+  var height = document.getElementsByClassName('inner-panel')[0].offsetHeight - document.getElementsByClassName('filters')[0].offsetHeight;
+  document.getElementsByClassName('scroll-data')[0].style.height = height + 'px';
+  
+ var height = document.getElementsByClassName('inner-panel')[1].offsetHeight - document.getElementById('example').offsetHeight - 50;
+  document.getElementsByClassName('scroll-data-mini')[0].style.height = height + 'px';
+</script>
+</body>
+</html>
